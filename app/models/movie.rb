@@ -24,7 +24,8 @@ class Movie < ApplicationRecord
   # Director#filmography
 
   # same as def characters below
-  has_many(:characters, { :class_name => "Character", :foreign_key => "movie_id" })
+  # has_many(:characters, { :class_name => "Character", :foreign_key => "movie_id" })
+  has_many(:characters)
 
   # def characters
     # my_id = self.id
